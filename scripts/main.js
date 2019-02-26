@@ -7,9 +7,9 @@ $(function () {
 
     // Experience
     $(".project").hover(function () {
-        $(this).find(".project-details").fadeIn(500);
+        $(this).find(".project-details").fadeIn(200);
     }, function () {
-        $(this).find(".project-details").fadeOut(500);
+        $(this).find(".project-details").fadeOut(200);
     });
 
     // Skills Bar Animation

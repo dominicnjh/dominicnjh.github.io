@@ -50,6 +50,10 @@ section:nth-child(even) {
     font-weight: bold;
 }
 
+.highlight {
+    color: #429dfb;
+}
+
 .first {
     margin-top: 0;
 }
@@ -75,7 +79,7 @@ section:nth-child(even) {
 }
 
 #profile .col-lg-7 {
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 /* Education */
@@ -95,11 +99,6 @@ section:nth-child(even) {
 }
 
 /* Projects */
-
-#projects .sub-heading {
-    text-align: center;
-}
-
 #projects .project-details {
     font-size: 1.5rem;
     padding-top: 50px;
@@ -114,13 +113,14 @@ section:nth-child(even) {
 /* Experience */
 .project {
     margin: auto;
-    position: relative;
+    overflow: hidden;
+    /* position: relative; */
 }
 
 .project-pic {
     display: block;
     height: 250px;
-    margin: 10px;
+    margin: 0 auto;
     width: 250px;
 }
 
@@ -130,11 +130,11 @@ section:nth-child(even) {
     display: none;
     font-weight: bold;
     height: 250px;
-    left: 25px;
+    left: 65.297px;
     opacity: 0.80;
     padding: 20px;
     position: absolute;
-    top: 10px;
+    top: 0;
     width: 250px;
 }
 
