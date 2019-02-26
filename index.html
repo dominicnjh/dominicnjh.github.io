@@ -9,27 +9,27 @@
     <link rel="icon" href="images/logo.PNG">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#showcase">
-            <img src="images/logo.PNG" width="30" height="30" alt="Logo">
+            <!-- <img src="images/logo.PNG" width="30" height="30" alt="Logo"> -->
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div id="nav" class="collapse navbar-collapse">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#profile">Profile</a>
@@ -60,22 +60,156 @@
 
     <!-- Profile -->
     <section id="profile">
-
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5"><img class="profile-pic" src="./images/profilePic.png" alt="Dom"></div>
+                <div class="col-lg-7">
+                    <div class="profile heading">Profile</div>
+                    <p>I am Dominic Ng Jun Hao, final year student in <a class="highlight" href="http://nus.edu.sg/"
+                            target="_blank">National University of Singapore
+                            (NUS)</a>, majoring in Mechanical
+                        Engineering and I am expected to graduate from NUS with a 2nd Upper Class Honours in May 2019.
+                    </p>
+                    <p>I am interested in mobile and web development and currently looking for a full-time role as a
+                        <span class="highlight">Software Engineer</span>.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Education -->
     <section id="education">
-
+        <div class="container-fluid">
+            <div class="heading">Education</div>
+            <div class="row item first">
+                <div class="col-lg-8">
+                    <div class="content-heading"><a href="http://nus.edu.sg/" target="_blank">National University of
+                            Singapore (NUS)</a></div>
+                    <div class="role">Bachelor of Engineering (Mechanical Engineering), Honours</div>
+                </div>
+                <div class="col-lg-4 date">Aug 2015 - Present</div>
+                <div class="col-lg-12 course-work"><span class="bold">Relevant Coursework:</span> Programming
+                    Methodology</div>
+            </div>
+            <div class="row item">
+                <div class="col-lg-8">
+                    <div class="content-heading"><a href="https://www.ntu.edu.sg/Pages/home.aspx"
+                            target="_blank">Nanyang Technological University (NTU)</a></div>
+                    <div class="role">Student Exchange Program (SEP)</div>
+                </div>
+                <div class="col-lg-4 date">Jan 2018 - May 2018</div>
+                <div class="col-lg-12 course-work"><span class="bold">Relevant Coursework:</span> Data Structures</div>
+            </div>
+            <div class="row item">
+                <div class="col-lg-8">
+                    <div class="content-heading"><a href="https://www.jobreadyprogrammer.com/" target="_blank">Job Ready
+                            Programmer</a></div>
+                    <div class="role">Online Courses on Java, jQuery & SQL</div>
+                </div>
+                <div class="col-lg-4 date">Nov 2018 - Present</div>
+                <div class="col-lg-12 course-work">
+                    <span class="bold">Relevant Coursework:</span>
+                    <ul>
+                        <li>Object Oriented Programming (OOP)</li>
+                        <li>Data Structures and Algorithms</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Projects -->
     <section id="projects">
+        <div class="container-fluid">
+            <div class="heading">Projects</div>
+            <div class="item">
+                <div class="sub-heading">Academic</div>
+                <div class="row item first">
+                    <div class="col-lg-8">
+                        <div class="content-heading">Design Project: Smart Rodent Glue Trap</div>
+                        <ul>
+                            <li>Programmed the microcontroller with Arduino IDE to notify users when a rodent is caught
+                            </li>
+                            <li>Implemented self-calibration features in the code to improve users' experience</li>
+                            <li>Optimised power consumption with improvements on software design patterns and circuitry
+                                of
+                                the system which increased battery life up to 200%
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 date">Aug 2018 - Nov 2018</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-heading">Personal</div>
+                <div class="row">
+                    <div class="project col-lg-4">
+                        <img class="project-pic" src="images/simonGame.png" alt="Simon Game">
+                        <div class="project-details">
+                            <div>JavaScript</div>
+                            <a href="simonGame.html" target="_blank"><button class="btn btn-outline-light">Learn
+                                    more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
     </section>
 
     <!-- Experience -->
     <section id="experience">
-
+        <div class="container-fluid">
+            <div class="heading">Experience</div>
+            <div class="item">
+                <div class="sub-heading">Work</div>
+                <div class="row item first">
+                    <div class="col-lg-9">
+                        <div class="content-heading"><a href="http://www.qars.ws/" target="_blank">QARS Management &
+                                Engineering Consultants Pte Ltd, Singapore</a></div>
+                        <div class="role">Technical Director Assistant, Intern</div>
+                    </div>
+                    <div class="col-lg-3 date">Jul 2017 - Dec 2017</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="sub-heading">Organisational and Committee</div>
+                <div class="row">
+                    <div class="project col-lg-4">
+                        <img class="project-pic" src="images/GAWXVI.jpg" alt="Grant A Wish XVI">
+                        <div class="project-details">
+                            <div>NUS Community Service Club</div>
+                            <div>Grant A Wish XVI</div>
+                            <div class="role">Wish Assistant</div>
+                            <a href="http://www.nus-csc.org/main/gaw.html" target="_blank"><button
+                                    class="btn btn-outline-light">Learn more</button></a>
+                        </div>
+                    </div>
+                    <div class="project col-lg-4">
+                        <img class="project-pic" src="images/PAHXIX.png" alt="Paint A Home XIX">
+                        <div class="overlay"></div>
+                        <div class="project-details">
+                            <div>NUS Community Service Club</div>
+                            <div>Paint A Home XIX</div>
+                            <div class="role">Project Director</div>
+                            <a href="http://www.nus-csc.org/main/pah.html" target="_blank"><button
+                                    class="btn btn-outline-light">Learn more</button></a>
+                        </div>
+                    </div>
+                    <div class="project col-lg-4">
+                        <img class="project-pic" src="images/PAHXVIII.jpg" alt="Paint A Home XVIII">
+                        <div class="overlay"></div>
+                        <div class="project-details">
+                            <div>NUS Community Service Club</div>
+                            <div>Paint A Home XVIII</div>
+                            <div class="role">Logistics Head</div>
+                            <a href="http://www.nus-csc.org/main/pah.html" target="_blank"><button
+                                    class="btn btn-outline-light">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Skills -->
@@ -151,15 +285,16 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <footer id="contact">
         <div class="container-fluid">
             <div class="heading">Contact</div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container-fluid">
-            <p>Copyright 2019 &copy Domnjh</p>
+            <a href="https://www.linkedin.com/in/dominicnjh" target="_blank"><i
+                    class="icon fab fa-linkedin fa-3x"></i></a>
+            <a href="https://github.com/dominicnjh" target="_blank"><i class="icon fab fa-github-square fa-3x"></i></a>
+            <div>
+                Email: dominicnjh@gmail.com
+            </div>
+            <p>Domnjh &copy 2019</p>
         </div>
     </footer>
 
@@ -174,8 +309,14 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"
+        integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP"
+        crossorigin="anonymous"></script>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/jquery.scrollTo.min.js"></script>
 
     <!-- Custom JS -->
     <script src="scripts/main.js"></script>

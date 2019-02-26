@@ -1,17 +1,12 @@
 body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    line-height: 2;
-    text-align: center;
-}
-
-h1 {
-    font-family: 'Roboto Slab', serif;
 }
 
 .container-fluid {
     margin: auto;
-    width: 70%;
+    padding: 3% 15px;
+    width: 60%;
 }
 
 section:nth-child(even) {
@@ -21,29 +16,145 @@ section:nth-child(even) {
 /*HEADINGS*/
 .heading {
     color: #0072a1;
-    font-size: 30px;
+    font-family: 'Montserrat-Bold', serif;
+    font-size: 3rem;
     font-weight: bold;
-    margin: 20px;
-    padding: 20px;
+    margin: 10px;
+    padding: 10px;
     text-align: center;
 }
 
 .sub-heading {
     color: #009ADA;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
     margin: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 .content-heading {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.item {
+    margin: 30px 0;
+}
+
+.role {
+    font-family: 'Montserrat-Light', serif;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.first {
+    margin-top: 0;
 }
 
 /* NavBar */
 .nav-item {
     padding: 0 10px;
+}
+
+/* Profile */
+.profile {
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    display: block;
+    height: 300px;
+    margin: 15% auto;
+    width: 300px;
+}
+
+#profile .col-lg-7 {
+    margin-top: 6%;
+}
+
+/* Education */
+.course-work {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date {
+    text-align: right;
+}
+
+@media(max-width: 1000px) {
+    .date {
+        text-align: left;
+    }
+}
+
+/* Projects */
+
+#projects .sub-heading {
+    text-align: center;
+}
+
+#projects .project-details {
+    font-size: 1.5rem;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#projects .btn {
+    bottom: 80px;
+    right: 70px;
+}
+
+/* Experience */
+.project {
+    margin: auto;
+    position: relative;
+}
+
+.project-pic {
+    display: block;
+    height: 250px;
+    margin: 10px;
+    width: 250px;
+}
+
+.project-details {
+    background-color: #5fa8e3;
+    color: #fff;
+    display: none;
+    font-weight: bold;
+    height: 250px;
+    left: 25px;
+    opacity: 0.80;
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    width: 250px;
+}
+
+.project .btn {
+    bottom: 20px;
+    position: absolute;
+}
+
+.project .btn:hover {
+    color: #0072a1;
+}
+
+@media(max-width: 1350px) {
+    .row {
+        display: block;
+    }
+
+    .project-details {
+        top: 0;
+    }
 }
 
 /* Skills */
@@ -52,11 +163,10 @@ section:nth-child(even) {
     border-radius: 3px;
     margin: 10px;
     position: relative;
-    transition: width 4s linear 1s;
 }
 
 .barfill {
-    background-color: #297ec2;
+    background-color: #427ca9;
     border-radius: 3px;
     height: 30px;
     width: 0;
@@ -82,4 +192,34 @@ section:nth-child(even) {
 footer {
     background-color: #333;
     color: #fff;
+    text-align: center;
+}
+
+footer .container-fluid {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer .heading, footer a {
+    color: #fff;
+}
+
+.icon {
+    color: #fff;
+    margin: 20px 30px;
+    opacity: 0.5;
+}
+
+.icon:hover, footer a:hover {
+    color: #fff;
+    opacity: 1;
+}
+
+footer div {
+    padding: 5px;
+}
+
+footer p {
+    opacity: 0.5;
+    padding: 5px;
 }
