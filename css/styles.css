@@ -13,6 +13,10 @@ section:nth-child(even) {
     background-color: #eef1f9;
 }
 
+.active {
+    color: #429dfb;
+}
+
 /*HEADINGS*/
 .heading {
     color: #0072a1;
