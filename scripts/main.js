@@ -12,7 +12,7 @@ $(function () {
         $(this).find(".project-details").fadeOut(200);
     });
 
-    // Skills Bar Animation
+    // Skills Bar Animation & Highlight NavBar Active Element
     $(window).on("scroll", function () {
         const winT = $(window).scrollTop();
         const winH = $(window).height();
