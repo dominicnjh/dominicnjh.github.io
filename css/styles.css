@@ -114,7 +114,6 @@ section:nth-child(even) {
 .project {
     margin: auto;
     overflow: hidden;
-    /* position: relative; */
 }
 
 .project-pic {
@@ -130,7 +129,8 @@ section:nth-child(even) {
     display: none;
     font-weight: bold;
     height: 250px;
-    left: 65.297px;
+    left: 26.75px;
+    /* left: 65.297px; */
     opacity: 0.80;
     padding: 20px;
     position: absolute;
@@ -152,8 +152,28 @@ section:nth-child(even) {
         display: block;
     }
 
+    #profile .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile.heading {
+        text-align: center;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
     .project-details {
+        left: 15px;
         top: 0;
+    }
+}
+
+@media(max-width: 990px) {
+    .project-details {
+        left: 165px;
     }
 }
 
