@@ -63,8 +63,19 @@ function nextSequence() {
   var randomChosenColour = buttonColours[randomNumber];
 
   gamePattern.push(randomChosenColour);
-  $("#" + randomChosenColour).fadeOut(100).fadeIn(100);
-  playSound(randomChosenColour);
+  GamePatternLoop(0);
+}
+
+// Display and Loop through entire game pattern
+function GamePatternLoop(i) {
+  setTimeout(function () {
+    $("#" + gamePattern[i]).fadeOut(100).fadeIn(100);
+    playSound(gamePattern[i]);
+    i++;
+    if (i < gamePattern.length) {
+      GamePatternLoop(i);
+    }
+  }, 300)
 }
 
 function playSound(colour) {
