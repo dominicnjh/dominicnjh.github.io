@@ -8,6 +8,8 @@ My personal online portfolio display my profile as well as used to link up with 
 4. CSS styling and positioning elements
 
 
+
+
 ## Simon Game
 ### How to play
 1. Press any key to start. Simon will give the first signal. Repeat the signal by pressing the same color button.
