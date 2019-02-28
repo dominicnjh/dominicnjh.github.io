@@ -6,15 +6,25 @@ body {
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
-  margin:  5%;
+  margin:  3%;
   color: #FEF2BF;
 }
 
-.container {
+.container-own {
   display: block;
   width: 50%;
   margin: auto;
+}
 
+.instruction {
+  color: #FEF2BF;
+  font-family: 'Press Start 2P', cursive;
+  padding: 30px;
+  text-align: left;
+}
+
+.instruction-title, .instruction-no {
+  text-align: center;
 }
 
 .btn {
@@ -22,7 +32,6 @@ body {
   display: inline-block;
   height: 200px;
   width: 200px;
-  border: 10px solid black;
   border-radius: 20%;
 }
 

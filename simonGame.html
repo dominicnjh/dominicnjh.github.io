@@ -4,35 +4,89 @@
 <head>
   <meta charset="utf-8">
   <title>Simon</title>
-  <link rel="stylesheet" href="css/simonGameStyles.css">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/simonGameStyles.css">
 </head>
 
 <body>
-  <h1 id="level-title">Press A Key to Start</h1>
-  <div class="container">
-    <div lass="row">
-
-      <div type="button" id="green" class="btn green">
-
+  <div class="instruction">
+    <h3 class="instruction-title">Instructions</h3>
+    <div class="row">
+      <div class="instruction-no col-lg-2 col-md-2 col-sm-2">
+        1.
       </div>
 
-      <div type="button" id="red" class="btn red">
-
+      <div class="col-lg-10 col-md-10 col-sm-10">
+        Press any key to start. Simon will give the first signal. Repeat the signal by pressing the same color
+        button.
       </div>
     </div>
 
     <div class="row">
-
-      <div type="button" id="yellow" class="btn yellow">
-
-      </div>
-      <div type="button" id="blue" class="btn blue">
-
+      <div class="instruction-no col-lg-2 col-md-2 col-sm-2">
+        2.
       </div>
 
+      <div class="col-lg-10 col-md-10 col-sm-10">
+        Simon will duplicate the 1st signal and add one more. Repeat these two signals by pressing the same color
+        buttons, in order.
+      </div>
     </div>
 
+    <div class="row">
+      <div class="instruction-no col-lg-2 col-md-2 col-sm-2">
+        3.
+      </div>
+
+      <div class="col-lg-10 col-md-10 col-sm-10">
+        Simon will duplicate these 1st two signals and add one.
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="instruction-no col-lg-2 col-md-2 col-sm-2">
+        4.
+      </div>
+
+      <div class="col-lg-10 col-md-10 col-sm-10">
+        Continue playing as long as you can repeat each sequence of signals correctly.
+      </div>
+    </div>
+  </div>
+
+  <h1 id="level-title">Press A Key to Start</h1>
+  <div class="container-own">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div type="button" id="green" class="btn green">
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <div type="button" id="red" class="btn red">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <div type="button" id="yellow" class="btn yellow">
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <div type="button" id="blue" class="btn blue">
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
