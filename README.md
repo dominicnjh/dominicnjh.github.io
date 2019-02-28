@@ -8,7 +8,6 @@ My personal online portfolio display my profile as well as used to link up with 
 4. CSS styling and positioning elements
 
 <br>
-<br>
 
 ## Simon Game
 ### How to play
