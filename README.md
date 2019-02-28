@@ -7,8 +7,8 @@ My personal online portfolio display my profile as well as used to link up with 
 3. Employing Bootstrap framework such Grid system, navigation bar and FontAwesome icons
 4. CSS styling and positioning elements
 
-
-
+<br>
+<br>
 
 ## Simon Game
 ### How to play
