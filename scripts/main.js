@@ -1,4 +1,15 @@
 $(function () {
+    // NavBar Fixed Position after Education Section
+    $("#education").waypoint(function(direction) {
+        if (direction === "down") {
+            $("nav").addClass("fixed-top");
+        } else {
+            $("nav").removeClass("fixed-top");
+        }
+    }, {
+        offset: "10%"
+    });
+
     // NavBar Smooth Scrolling Animation
     $("#nav a").click(function (e) {
         e.preventDefault();
