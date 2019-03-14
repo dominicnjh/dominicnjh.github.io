@@ -13,6 +13,11 @@ section:nth-child(even) {
     background-color: #eef1f9;
 }
 
+section .item {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
 .active {
     color: #429dfb;
 }
@@ -182,6 +187,10 @@ section:nth-child(even) {
 }
 
 /* Skills */
+#skills .col-lg-6 {
+    opacity: 0;
+}
+
 .bar {
     background-color: #ddd;
     border-radius: 3px;

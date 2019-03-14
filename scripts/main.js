@@ -39,6 +39,21 @@ $(function () {
         }
     });
 
+    // Education
+    $("#education").waypoint(function (direction) {
+        setTimeout(() => {
+            $("#education .item:nth-child(2)").addClass("animated fadeInUp");
+        }, 200);
+        setTimeout(function () {
+            $("#education .item:nth-child(3)").addClass("animated fadeInUp");
+        }, 400);
+        setTimeout(function () {
+            $("#education .item:nth-child(4)").addClass("animated fadeInUp");
+        }, 600);
+    }, {
+            offset: "50%"
+        });
+
     // Experience
     $(".project").hover(function () {
         $(this).find(".project-details").fadeIn(200);
@@ -46,39 +61,19 @@ $(function () {
         $(this).find(".project-details").fadeOut(200);
     });
 
-    // Skills Bar Animation & Highlight NavBar Active Element
-    $(window).on("scroll", function () {
-        const winT = $(window).scrollTop();
-        const winH = $(window).height();
-        const posActive = winT + 50;
-
-        const profileT = $("#profile").offset().top;
-        const educationT = $("#education").offset().top;
-        const projectsT = $("#projects").offset().top;
-        const experienceT = $("#experience").offset().top;
-        const skillsT = $("#skills").offset().top;
-        const contactT = $("#contact").offset().top;
-
-        if (posActive > profileT) { highlightLink("#profile"); }
-        if (posActive > educationT) { highlightLink("#education"); }
-        if (posActive > projectsT) { highlightLink("#projects"); }
-        if (posActive > experienceT) { highlightLink("#experience"); }
-        if (posActive > skillsT) { highlightLink("#skills"); }
-        if (posActive > contactT || winT + winH === $(document).height()) { highlightLink("#contact"); }
-
-        if (winT + winH > skillsT + (winH / 2)) {
+    // Skills
+    $("#skills").waypoint(function (direction) {
+        $("#skills .col-lg-6:nth-child(odd)").addClass("animated fadeInLeft");
+        $("#skills .col-lg-6:nth-child(even)").addClass("animated fadeInRight");
+        // SkillBar Animation
+        setTimeout(function () {
             $(".bar").each(function () {
                 $(this).find(".barfill").animate({
                     width: $(this).attr("data-percent")
-                }, 1000);
+                }, 2000);
             });
-        }
-    });
-
-
-    function highlightLink(anchor) {
-        $('nav .active').removeClass('active');
-        $("nav").find('[href="' + anchor + '"]').addClass('active');
-    }
-
+        }, 200);
+    }, {
+            offset: "50%"
+        });
 });
