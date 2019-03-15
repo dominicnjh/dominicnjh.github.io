@@ -29,7 +29,7 @@ $(function () {
     });
 
     // Fixed Position after Education Section
-    $("#education").waypoint(function (direction) {
+    $("#profile").waypoint(function (direction) {
         if (direction === "down") {
             $("nav").addClass("fixed-top");
         } else {
