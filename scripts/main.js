@@ -41,7 +41,7 @@ $(function () {
 
     // Education
     $("#education").waypoint(function (direction) {
-        setTimeout(() => {
+        setTimeout(function () {
             $("#education .item:nth-child(2)").addClass("animated fadeInUp");
         }, 200);
         setTimeout(function () {
@@ -53,6 +53,23 @@ $(function () {
     }, {
             offset: "50%"
         });
+
+    // Projects
+    $("#projects .item:nth-child(2)").waypoint(function (direction) {
+        setTimeout(function () {
+            $("#projects .item:nth-child(2)").addClass("animated fadeInUp");
+        }, 200);
+    }, {
+            offset: "80%"
+        });
+    
+    $("#projects .item:nth-child(3)").waypoint(function (direction) {
+        setTimeout(function () {
+            $("#projects .item:nth-child(3)").addClass("animated fadeInUp");
+        }, 200);
+    }, {
+        offset: "80%"
+    });
 
     // Experience
     $(".project").hover(function () {
