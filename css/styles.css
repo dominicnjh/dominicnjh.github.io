@@ -18,6 +18,10 @@ section .item {
     animation-duration: 1s;
 }
 
+.overlay {
+    background-image: linear-gradient()
+}
+
 .active {
     color: #429dfb;
 }
@@ -118,77 +122,66 @@ section .item {
     text-align: center;
 }
 
-#projects .btn {
-    bottom: 80px;
-    right: 70px;
+.simonGame {
+    background-image: url("../images/simonGame.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
 }
 
 /* Experience */
-.project {
-    margin: auto;
-    opacity: 0;
-    overflow: hidden;
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-.project-pic {
-    display: block;
+.project {
     height: 250px;
-    margin: 0 auto;
+    margin: 20px;
+    opacity: 0;
+    padding: 0;
     width: 250px;
 }
 
 .project-details {
-    background-color: #5fa8e3;
+    animation-duration: 0.5s;
+    background-color: #5fa8e3d0;
     color: #fff;
-    display: none;
     font-weight: bold;
-    height: 250px;
-    left: 26.75px;
-    /* left: 65.297px; */
-    opacity: 0.80;
+    height: 100%;
+    opacity: 0;
     padding: 20px;
-    position: absolute;
-    top: 0;
-    width: 250px;
+    width: 100%;
 }
 
 .project .btn {
-    bottom: 20px;
-    position: absolute;
+    margin: 20px;
 }
 
 .project .btn:hover {
     color: #0072a1;
 }
 
-@media(max-width: 1350px) {
-    .row {
-        display: block;
-    }
-
-    #profile .container-fluid {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .profile.heading {
-        text-align: center;
-    }
-
-    .project {
-        margin-bottom: 20px;
-    }
-
-    .project-details {
-        left: 15px;
-        top: 0;
-    }
+.gawxvi {
+    background-image: url("../images/GAWXVI.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-@media(max-width: 990px) {
-    .project-details {
-        left: 165px;
-    }
+.pahxix {
+    background-image: url("../images/PAHXIX.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.pahxviii {
+    background-image: url("../images/PAHXVIII.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* Skills */

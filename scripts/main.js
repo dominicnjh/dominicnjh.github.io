@@ -81,9 +81,9 @@ $(function () {
     });
 
     $(".project").hover(function () {
-        $(this).find(".project-details").fadeIn(200);
+        $(this).find(".project-details").addClass("animated fadeInUp");
     }, function () {
-        $(this).find(".project-details").fadeOut(200);
+        $(this).find(".project-details").removeClass("animated fadeInUp");
     });
 
     // Skills
@@ -102,6 +102,7 @@ $(function () {
             offset: "50%"
         });
 
+    // Simple Function to Animate Content Fade In
     function contentAnimation(selector) {
         $(selector).waypoint(function (direction) {
             $(selector).addClass("animated fadeInUp");
