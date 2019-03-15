@@ -126,6 +126,7 @@ section .item {
 /* Experience */
 .project {
     margin: auto;
+    opacity: 0;
     overflow: hidden;
 }
 

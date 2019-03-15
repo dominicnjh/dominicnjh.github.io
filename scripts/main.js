@@ -1,24 +1,5 @@
 $(function () {
     // NavBar
-    // Fixed Position after Education Section
-    $("#education").waypoint(function (direction) {
-        if (direction === "down") {
-            $("nav").addClass("fixed-top");
-        } else {
-            $("nav").removeClass("fixed-top");
-        }
-    }, {
-            offset: "10%"
-        });
-
-    // Profile
-    $("#profile").waypoint(function (direction) {
-        $("#profile .col-lg-5").addClass("animated fadeInLeft");
-        $("#profile .col-lg-7").addClass("animated fadeInRight");
-    }, {
-        offset: "50%"
-    });
-
     // Smooth Scrolling Animation
     $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -47,39 +28,58 @@ $(function () {
         }
     });
 
-    // Education
+    // Fixed Position after Education Section
     $("#education").waypoint(function (direction) {
-        setTimeout(function () {
-            $("#education .item:nth-child(2)").addClass("animated fadeInUp");
-        }, 200);
-        setTimeout(function () {
-            $("#education .item:nth-child(3)").addClass("animated fadeInUp");
-        }, 400);
-        setTimeout(function () {
-            $("#education .item:nth-child(4)").addClass("animated fadeInUp");
-        }, 600);
+        if (direction === "down") {
+            $("nav").addClass("fixed-top");
+        } else {
+            $("nav").removeClass("fixed-top");
+        }
+    }, {
+            offset: "10%"
+        });
+
+    // Profile
+    $("#profile").waypoint(function (direction) {
+        $("#profile .col-lg-5").addClass("animated fadeInLeft");
+        $("#profile .col-lg-7").addClass("animated fadeInRight");
     }, {
             offset: "50%"
         });
 
+    // Education
+    contentAnimation("#education .item:nth-child(2)");
+    contentAnimation("#education .item:nth-child(3)");
+    contentAnimation("#education .item:nth-child(4)");
+
     // Projects
-    $("#projects .item:nth-child(2)").waypoint(function (direction) {
+    contentAnimation("#projects .item:nth-child(2)");
+    contentAnimation("#projects .item:nth-child(3)");
+    $("#projects .project").waypoint(function (direction) {
         setTimeout(function () {
-            $("#projects .item:nth-child(2)").addClass("animated fadeInUp");
-        }, 200);
-    }, {
-            offset: "80%"
-        });
-    
-    $("#projects .item:nth-child(3)").waypoint(function (direction) {
-        setTimeout(function () {
-            $("#projects .item:nth-child(3)").addClass("animated fadeInUp");
-        }, 200);
+            $("#projects .project").addClass("animated fadeInUp");
+        }, 500);
     }, {
         offset: "80%"
     });
 
     // Experience
+    contentAnimation("#experience .item:nth-child(2)");
+    contentAnimation("#experience .item:nth-child(3)");
+    $("#experience .project").waypoint(function (direction) {
+        setTimeout(function () {
+            $("#experience .project:nth-child(1)").addClass("animated fadeInUp");
+        }, 500);
+        setTimeout(function () {
+            $("#experience .project:nth-child(2)").addClass("animated fadeInUp");
+        }, 700);
+        setTimeout(function () {
+            $("#experience .project:nth-child(3)").addClass("animated fadeInUp");
+        }, 900);
+    }, {
+        offset: "80%"
+    });
+
     $(".project").hover(function () {
         $(this).find(".project-details").fadeIn(200);
     }, function () {
@@ -101,4 +101,12 @@ $(function () {
     }, {
             offset: "50%"
         });
+
+    function contentAnimation(selector) {
+        $(selector).waypoint(function (direction) {
+            $(selector).addClass("animated fadeInUp");
+        }, {
+                offset: "80%"
+            });
+    }
 });
