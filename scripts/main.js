@@ -11,6 +11,14 @@ $(function () {
             offset: "10%"
         });
 
+    // Profile
+    $("#profile").waypoint(function (direction) {
+        $("#profile .col-lg-5").addClass("animated fadeInLeft");
+        $("#profile .col-lg-7").addClass("animated fadeInRight");
+    }, {
+        offset: "50%"
+    });
+
     // Smooth Scrolling Animation
     $('a[href*="#"]').not('[href="#"]').not('[href="#0"]').click(function (event) {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

@@ -73,6 +73,10 @@ section .item {
 }
 
 /* Profile */
+#profile .col-lg-5, .col-lg-7 {
+    opacity: 0;
+}
+
 .profile {
     margin-left: 0;
     padding-left: 0;
