@@ -65,8 +65,11 @@ $(function () {
     contentAnimation("#projects .item:nth-child(3)");
     $("#projects .project").waypoint(function (direction) {
         setTimeout(function () {
-            $("#projects .project").addClass("animated fadeInUp");
+            $("#projects .project:nth-child(1)").addClass("animated fadeInUp");
         }, 500);
+        setTimeout(function () {
+            $("#projects .project:nth-child(2)").addClass("animated fadeInUp");
+        }, 700);
     }, {
             offset: "80%"
         });

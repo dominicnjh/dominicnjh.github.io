@@ -150,6 +150,14 @@ section .item {
     text-align: center;
 }
 
+.domnjhPortal {
+    background-image: url("../images/domnjhPortal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 300px;
+}
+
 .simonGame {
     background-image: url("../images/simonGame.png");
     background-position: center;
@@ -164,6 +172,7 @@ section .item {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .project {
     height: 250px;
     margin: 20px;
