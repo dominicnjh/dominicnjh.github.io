@@ -99,6 +99,21 @@ section .item {
     margin-top: 5%;
 }
 
+@media(max-width: 1350px) {
+    .row {
+        display: block;
+    }
+
+    #profile .container-fluid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .profile.heading {
+        text-align: center;
+    }
+}
+
 /* Education */
 .course-work {
     margin-top: 10px;
