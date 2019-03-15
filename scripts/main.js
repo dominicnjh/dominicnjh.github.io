@@ -39,6 +39,14 @@ $(function () {
             offset: "10%"
         });
 
+    // Add Active State to Navbar items when scrolled to
+    highlightLink("#profile", "#profile");
+    highlightLink("#profile", "#education");
+    highlightLink("#education", "#projects");
+    highlightLink("#projects", "#experience");
+    highlightLink("#experience", "#skills");
+    highlightLink("#skills", "#contact");
+
     // Profile
     $("#profile").waypoint(function (direction) {
         $("#profile .col-lg-5").addClass("animated fadeInLeft");
@@ -60,8 +68,8 @@ $(function () {
             $("#projects .project").addClass("animated fadeInUp");
         }, 500);
     }, {
-        offset: "80%"
-    });
+            offset: "80%"
+        });
 
     // Experience
     contentAnimation("#experience .item:nth-child(2)");
@@ -77,8 +85,8 @@ $(function () {
             $("#experience .project:nth-child(3)").addClass("animated fadeInUp");
         }, 900);
     }, {
-        offset: "80%"
-    });
+            offset: "80%"
+        });
 
     $(".project").hover(function () {
         $(this).find(".project-details").addClass("animated fadeInUp");
@@ -109,5 +117,21 @@ $(function () {
         }, {
                 offset: "80%"
             });
+    }
+
+    // Highlight Active NavBar Element
+    function highlightLink(prev, current) {
+        $(current).waypoint(function (direction) {
+            if (direction === "down") {
+                $("nav .nav-item").removeClass("nav-active");
+                $('nav a[href="' + current + '"]').parent().addClass('nav-active');
+            } else {
+                $("nav .nav-item").removeClass("nav-active");
+                $('nav a[href="' + prev + '"]').parent().addClass('nav-active');
+            }
+        }, {
+                offset: "20%"
+            });
+
     }
 });
