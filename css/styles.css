@@ -22,10 +22,6 @@ section .item {
     animation-duration: 1s;
 }
 
-.overlay {
-    background-image: linear-gradient()
-}
-
 .active {
     color: #429dfb;
 }
@@ -96,6 +92,9 @@ section .item {
 /* Showcase */
 #showcase {
     background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0, 0, 0, 0.7)), to(rgb(0, 0, 0, 0.7))), url("../images/showcase.jpg");
+    background-image: -webkit-linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("../images/showcase.jpg");
+    background-image: -o-linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("../images/showcase.jpg");
     background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("../images/showcase.jpg");
     background-position: center;
     background-repeat: no-repeat;
