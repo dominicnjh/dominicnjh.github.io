@@ -127,16 +127,6 @@ section .item {
     color: #42bffb;
 }
 
-@media(max-width: 797px) {
-    #showcase {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-    }
-}
-
 /* Profile */
 #profile .col-lg-5, .col-lg-7 {
     opacity: 0;
